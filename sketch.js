@@ -65,7 +65,7 @@ class Hex{
 
 		try {
 			this.adjacent.push(grid[this.x + this.y % 2][this.y + 1])
-		} catch { }
+		}catch{}
 		
 		this.adjacent = this.adjacent.filter(function( element ) {
 			return element !== undefined;
